@@ -1,0 +1,73 @@
+<html>
+ <head>
+   <title>Nav Bar : </title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="./product.js"></script> 
+</head>
+ <body>
+ <div class="container">
+<nav class="navbar navbar-inverse">
+     <div class="container-fluid">
+	  <div class="navbar-header">
+	  <button class="navbar-toggle" data-toggle="collapse" data-target="#mymenu">
+	    <span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	  </button>
+	    <a href="#" class="navbar-brand">My App Name</a>
+	  </div>	  
+	<div class="collapse navbar-collapse" id="mymenu">  
+	  <ul class="nav navbar-nav navbar-right">
+	    <li><a href="admin_home.html">Home</a></li>
+	   <li><a href="profile.html">Profile</a></li>
+	   <li><a href="addProduct.html">Add Product</a></li>
+       <li><a href="viewOrder.html">View Order</a></li>
+	   <li><a href="#">Logout</a></li>
+	  </ul>
+	  </div>
+   </div>  
+  </nav>
+   
+   <div class="container-fluid">
+     <div class="well">
+	  <h1>Add Product Details Section</h1>
+	 </div>
+   </div>
+   
+   <div class="container-fluid ">
+     <div class="row">
+      <div class="form-group">
+          <label>Enter Product Name</label>
+          <input type="text" placeholder="Enter Product Name" id="pname" class="form-control"/>
+      </div>
+      <div class="form-group">
+        <label>Enter Product Brand</label>
+        <input type="text" placeholder="Enter Product Brand" id="pbrand" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label>Enter Product Price</label>
+        <input type="number" placeholder="Enter Product Price" id="pprice" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label>Upload Product Image</label>
+        <input type="file" id="pfile" name="pfile" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <input type="button" value="Add Prdoduct" onclick="addProductDetails()" class="btn btn-success form-control"/>
+    </div>
+     </div>	
+   </div>
+   <br/><br/><br/>
+   <div class="container-fluid text-center">
+     <footer>
+	  <p>Designed By &copy; Web - 2:30 PM</p>
+	 </footer>
+   
+   </div>
+   
+ </div>
+ </body>
+ 
+</html> 
